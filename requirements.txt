@@ -54,4 +54,4 @@ django==3.2.9
 django-rest-swagger
 openpyxl==3.0.10
 drf-yasg
-Pillow==9.3.0
+Pillow
