@@ -4,8 +4,10 @@ from django.db import models
 class Advert(models.Model):
     author = models.CharField(max_length=50, verbose_name="Автор")
     description = models.TextField(verbose_name="Описание")
-    whatsapp_number = models.CharField(max_length=15, verbose_name="Номер телефона(whatsapp)")
-    add_date = models.DateTimeField(auto_now=True, verbose_name="Дата добавление")
+    whatsapp_number = models.CharField(
+        max_length=15, verbose_name="Номер телефона(whatsApp)")
+    add_date = models.DateTimeField(
+        auto_now=True, verbose_name="Дата добавление")
 
     def __str__(self):
         return f"Реклама - {self.author}"
@@ -16,7 +18,8 @@ class Advert(models.Model):
 
 
 class Number(models.Model):
-    advert = models.ForeignKey(to=Advert, on_delete=models.CASCADE, related_name="my_numbers")
+    advert = models.ForeignKey(
+        to=Advert, on_delete=models.CASCADE, related_name="my_numbers")
     number = models.CharField(max_length=15, verbose_name="Номер телефона")
 
     def __str__(self):
@@ -28,7 +31,8 @@ class Number(models.Model):
 
 
 class Image(models.Model):
-    advert = models.ForeignKey(to=Advert, on_delete=models.CASCADE, related_name="my_images")
+    advert = models.ForeignKey(
+        to=Advert, on_delete=models.CASCADE, related_name="my_images")
     image = models.ImageField(upload_to="images/", verbose_name="Фото")
 
     def __str__(self):
@@ -37,6 +41,3 @@ class Image(models.Model):
     class Meta:
         verbose_name = "Фото"
         verbose_name_plural = "Фото"
-
-
-

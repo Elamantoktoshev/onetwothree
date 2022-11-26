@@ -15,7 +15,7 @@ django-on-heroku==1.1.2
 django-filter
 django-phonenumber-field==6.1.0
 django-session-timeout==0.1.0
-django-heroku
+django-heroku==0.3.1
 django-templated-mail==1.1.1
 djangorestframework==3.13.1
 djangorestframework-simplejwt==4.8.0
@@ -54,3 +54,4 @@ django==3.2.9
 django-rest-swagger
 openpyxl==3.0.10
 drf-yasg
+Pillow==9.3.0
