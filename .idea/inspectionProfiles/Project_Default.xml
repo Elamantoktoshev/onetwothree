@@ -1,0 +1,128 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="{%cycle" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="style" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="55">
+            <item index="0" class="java.lang.String" itemvalue="html5lib" />
+            <item index="1" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="2" class="java.lang.String" itemvalue="defusedxml" />
+            <item index="3" class="java.lang.String" itemvalue="django-templated-mail" />
+            <item index="4" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="5" class="java.lang.String" itemvalue="pycparser" />
+            <item index="6" class="java.lang.String" itemvalue="coreschema" />
+            <item index="7" class="java.lang.String" itemvalue="djangorestframework-simplejwt" />
+            <item index="8" class="java.lang.String" itemvalue="certifi" />
+            <item index="9" class="java.lang.String" itemvalue="oauthlib" />
+            <item index="10" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="11" class="java.lang.String" itemvalue="django-session-timeout" />
+            <item index="12" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="13" class="java.lang.String" itemvalue="dj-database-url" />
+            <item index="14" class="java.lang.String" itemvalue="django-htmlmin" />
+            <item index="15" class="java.lang.String" itemvalue="asgiref" />
+            <item index="16" class="java.lang.String" itemvalue="cryptography" />
+            <item index="17" class="java.lang.String" itemvalue="whitenoise" />
+            <item index="18" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="19" class="java.lang.String" itemvalue="python3-openid" />
+            <item index="20" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="21" class="java.lang.String" itemvalue="idna" />
+            <item index="22" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="23" class="java.lang.String" itemvalue="django-heroku" />
+            <item index="24" class="java.lang.String" itemvalue="cffi" />
+            <item index="25" class="java.lang.String" itemvalue="requests" />
+            <item index="26" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="27" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="28" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="29" class="java.lang.String" itemvalue="django-cloudinary-storage" />
+            <item index="30" class="java.lang.String" itemvalue="ruamel.yaml.clib" />
+            <item index="31" class="java.lang.String" itemvalue="django-phonenumber-field" />
+            <item index="32" class="java.lang.String" itemvalue="urllib3" />
+            <item index="33" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="34" class="java.lang.String" itemvalue="django-cors-headers" />
+            <item index="35" class="java.lang.String" itemvalue="uritemplate" />
+            <item index="36" class="java.lang.String" itemvalue="six" />
+            <item index="37" class="java.lang.String" itemvalue="phonenumbers" />
+            <item index="38" class="java.lang.String" itemvalue="ruamel.yaml" />
+            <item index="39" class="java.lang.String" itemvalue="packaging" />
+            <item index="40" class="java.lang.String" itemvalue="social-auth-core" />
+            <item index="41" class="java.lang.String" itemvalue="coreapi" />
+            <item index="42" class="java.lang.String" itemvalue="django" />
+            <item index="43" class="java.lang.String" itemvalue="social-auth-app-django" />
+            <item index="44" class="java.lang.String" itemvalue="django-js-asset" />
+            <item index="45" class="java.lang.String" itemvalue="itypes" />
+            <item index="46" class="java.lang.String" itemvalue="python-decouple" />
+            <item index="47" class="java.lang.String" itemvalue="django-on-heroku" />
+            <item index="48" class="java.lang.String" itemvalue="pytz" />
+            <item index="49" class="java.lang.String" itemvalue="webencodings" />
+            <item index="50" class="java.lang.String" itemvalue="inflection" />
+            <item index="51" class="java.lang.String" itemvalue="Pillow" />
+            <item index="52" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="53" class="java.lang.String" itemvalue="django-filter" />
+            <item index="54" class="java.lang.String" itemvalue="django-rest-swagger" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W292" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="random.random.shuffle" />
+          <option value="str.__setitem__" />
+          <option value="Ownsite_root.app1.models.Order.objects" />
+          <option value="Ownsite_root.Ownsite.urls.app1" />
+          <option value="wedding_root.main.models.Info.objects" />
+          <option value="main.models.Product.objects" />
+          <option value="main.models.Contact.objects" />
+          <option value="shop.models.Product.objects" />
+          <option value="shop.models.Customer.objects" />
+          <option value="shop.models.Comment.objects" />
+          <option value="shop.models.Review.objects" />
+          <option value="django.db.models.fields.CharField.id" />
+          <option value="product.models.Product.objects" />
+          <option value="config.urls.re_path" />
+          <option value="work.models.BadWord.objects" />
+          <option value="django.db.models.fields.related.ForeignKey.title" />
+          <option value="feedback.models.Review.seekek" />
+          <option value="account.models.Seeker.objects" />
+          <option value="pincode.models.SeekerPinCode.objects" />
+          <option value="pincode.models.EmployerPinCode.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
