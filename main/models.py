@@ -3,7 +3,21 @@ from cloudinary.models import CloudinaryField
 
 
 class Advert(models.Model):
+
+    items = (
+        ("1", "К.Мүлк"),
+        ("2", "Авто"),
+        ("3", "Мал чарба"),
+        ("4", "Алуу сатуу"),
+        ("5", "Жумуш"),
+        ("6", "Электроника"),
+        ("7", "Каттам"),
+
+    )
+
     author = models.CharField(max_length=50, verbose_name="Автор")
+    itemchoice = models.CharField(
+        max_length=50, default="New Item", choices=items)
     description = models.TextField(verbose_name="Описание")
     whatsapp_number = models.CharField(
         max_length=15, verbose_name="Номер телефона(whatsApp)")

@@ -10,12 +10,14 @@ class AdvertListAPIView(ListAPIView):
     def list(self, request, *args, **kwargs):
         adverts, result = models.Advert.objects.all(), []
         for advert in adverts:
-            nums = serializers.NumberSerializer(advert.my_numbers.all(), many=True)
-            ims = serializers.ImageSerializer(advert.my_images.all(), many=True)
+            nums = serializers.NumberSerializer(
+                advert.my_numbers.all(), many=True)
+            # ims = serializers.ImageSerializer(
+            #     advert.my_images.all(), many=True)
+            ims = serializers.ImageSerializer(
+                advert.my_images.all(), many=True)
             ser = dict(self.serializer_class(advert).data)
             ser.update(numbers=nums.data)
             ser.update(ims=ims.data)
             result.append(ser)
         return Response(result, status=200)
-
-
