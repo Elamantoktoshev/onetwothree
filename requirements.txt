@@ -55,3 +55,4 @@ django-rest-swagger
 openpyxl==3.0.10
 drf-yasg
 Pillow
+cloudinary

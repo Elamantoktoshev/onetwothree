@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class Advert(models.Model):
@@ -33,7 +34,7 @@ class Number(models.Model):
 class Image(models.Model):
     advert = models.ForeignKey(
         to=Advert, on_delete=models.CASCADE, related_name="my_images")
-    image = models.ImageField(upload_to="images/", verbose_name="Фото")
+    image = CloudinaryField("images")
 
     def __str__(self):
         return f"Фото - {self.advert}"

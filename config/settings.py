@@ -1,5 +1,8 @@
 import os
-import django_heroku
+# import django_heroku
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -51,7 +54,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 INSTALLED_APPS = [
     # cors setting
-    'corsheaders',
+    # 'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,11 +66,12 @@ INSTALLED_APPS = [
     "rest_framework",
     # server settings
     'whitenoise',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
     # CORS MUST BE FIRST
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
     # END CORS
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -133,6 +137,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+# cloudinary
+cloudinary.config(
+    cloud_name="drw2jobkz",
+    api_key="371585538267791",
+    api_secret="4hlyyw7kQhSYik0-WPQKLZUSLtA"
+)
+# endcloudinary
 
 # STATIC SETTING
 STATIC_URL = '/static/'
@@ -149,4 +160,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
