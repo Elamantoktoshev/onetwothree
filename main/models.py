@@ -17,7 +17,7 @@ class Advert(models.Model):
 
     author = models.CharField(max_length=50, verbose_name="Автор")
     itemchoice = models.CharField(
-        max_length=50, default="New Item", choices=items)
+        max_length=50, default="New Item", choices=items, verbose_name="Тип")
     description = models.TextField(verbose_name="Описание")
     whatsapp_number = models.CharField(
         max_length=15, verbose_name="Номер телефона(whatsApp)")
