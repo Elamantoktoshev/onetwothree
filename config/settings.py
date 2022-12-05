@@ -1,5 +1,5 @@
 import os
-import django_heroku
+# import django_heroku
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -54,7 +54,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 INSTALLED_APPS = [
     # cors setting
-    'corsheaders',
+    # 'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,7 +71,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     # CORS MUST BE FIRST
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
     # END CORS
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -160,4 +160,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
