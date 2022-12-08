@@ -58,5 +58,5 @@ class Image(models.Model):
         verbose_name_plural = "Фото"
 
     def save(self, *args, **kwargs):
-        print(self.image)
+        print(dir(self.image))
         super().save(*args, **kwargs)
